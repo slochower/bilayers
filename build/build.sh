@@ -6,7 +6,7 @@ echo "Retrieving and processing reference metadata"
 
 # pandoc settings
 CSL_PATH=references/citations.csl
-CSS_PATH=references/github-pandoc.css
+CSS_PATH=github-pandoc.css
 BIBLIOGRAPHY_PATH=references/generated/bibliography.json
 INPUT_PATH=references/generated/all-sections.md
 
