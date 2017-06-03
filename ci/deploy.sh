@@ -18,6 +18,11 @@ eval `ssh-agent -s`
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 
+# Fetch and create gh-pages and references branches
+# Travis does a shallow and single branch git clone
+git remote set-branches --add origin output references
+git fetch origin output:output references:references
+
 # Commit message
 MESSAGE="\
 `git log --max-count=1 --format='%s'`
@@ -35,13 +40,11 @@ The full commit message that triggered this build is copied below:
 
 $TRAVIS_COMMIT_MESSAGE
 "
-git add .
-git status
 
-# # Deploy the reference data to references
-# echo "Deploying references branch..."
-# ghp-import --push --branch=references --message="$MESSAGE" references/generated
+# Deploy the reference data to references
+echo "Deploying references branch..."
+ghp-import --push --branch=references --message="$MESSAGE" references/generated
 
 # echo "Deploying gh-pages branch..."
-# # Deploy the output to gh-pages
-# ghp-import --push --branch=gh-pages --message="$MESSAGE" output
+# Deploy the output to gh-pages
+ghp-import --push --branch=output --message="$MESSAGE" output
