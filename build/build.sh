@@ -7,8 +7,8 @@ echo "Retrieving and processing reference metadata"
 # pandoc settings
 CSL_PATH=citations.csl
 CSS_PATH=github-pandoc.css
-BIBLIOGRAPHY_PATH=literature-build/generated/bibliography.json
-INPUT_PATH=literature-build/generated/all-sections.md
+BIBLIOGRAPHY_PATH=literature-build/build/generated/bibliography.json
+INPUT_PATH=literature-build/build/generated/all-sections.md
 
 # Create HTML outpout
 # http://pandoc.org/MANUAL.html
