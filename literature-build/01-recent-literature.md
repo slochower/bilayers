@@ -1,0 +1,5 @@
+[@doi:10.1152/physrev.00028.2012] is a huge review that covers the background and physiology of PIs; section IX and X discuss the role of PIs in membranes. Subsection F therein approaches question "how do cells maintain their PM PtdIns(4,5)P₂ pools?" and goes into the suppression of phosphatases by Li<sup>+</sup> as well as the so-called "futile cycle" of phosphorylation and dephosphorylation of the 5-phosphate on PtdIns(4,5)P₂.
+
+Table 1 has a list of PI-binding proteins, Table 2 covers interactions with ion channels, Tables 3/4 discuss endo- and exocytosis. Table 5 lists human diseases associated with inositol phosphatase defects.
+
+Kir2.1 potassium channels are inhibited by PtdIns(4,5)P₂ and other phosphoinositides [@doi: 10.1074/jbc.M113.452540]. Using Autodock 4.2, [@doi: 10.1074/jbc.M113.452540] find that PIs with 2 or 3 phosphate groups bind stronger than PIP.
