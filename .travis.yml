@@ -29,7 +29,7 @@ script:
 # cache:
 #   directories:
 #     - references/generated
-# after_success:
-#   - test $TRAVIS_BRANCH = "master" &&
-#     test $TRAVIS_PULL_REQUEST = "false" &&
-#     sh ci/deploy.sh
+after_success:
+  - test $TRAVIS_BRANCH = "master" &&
+    test $TRAVIS_PULL_REQUEST = "false" &&
+    sh ci/deploy.sh
