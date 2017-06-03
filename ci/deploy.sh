@@ -35,7 +35,7 @@ The full commit message that triggered this build is copied below:
 
 $TRAVIS_COMMIT_MESSAGE
 "
-
+git add .
 git status
 
 # # Deploy the reference data to references

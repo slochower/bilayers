@@ -45,12 +45,12 @@ def get_divider(title='Error', linewidth=79, fill_character='#'):
 stats = collections.OrderedDict()
 
 # Configure directories
-ref_dir = pathlib.Path('.')
+ref_dir = pathlib.Path('../references')
 gen_dir = ref_dir.joinpath('generated')
 gen_dir.mkdir(exist_ok=True)
 
 # Read and process manuscript
-text = get_text('../literature-build')
+text = get_text('../recent-literature')
 refs = sorted(get_references_from_text(text))
 
 # Warn about non-failing misformatted references

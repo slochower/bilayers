@@ -1,8 +1,8 @@
 # Generated manuscript output files
-output/
+# output/
 
 # Generated reference files
-references/generated/*
+# references/generated/*
 !references/generated/README.md
 
 # Python

@@ -5,12 +5,14 @@ echo "Retrieving and processing reference metadata"
 (cd build && python references.py)
 
 # pandoc settings
-CSL_PATH=citations.csl
-CSS_PATH=github-pandoc.css
-BIBLIOGRAPHY_PATH=literature-build/build/generated/bibliography.json
-INPUT_PATH=literature-build/build/generated/all-sections.md
+CSL_PATH=references/citations.csl
+CSS_PATH=references/github-pandoc.css
+BIBLIOGRAPHY_PATH=references/generated/bibliography.json
+INPUT_PATH=references/generated/all-sections.md
 
-# Create HTML outpout
+# Create HTML output
+mkdir -p output
+
 # http://pandoc.org/MANUAL.html
 echo "Exporting HTML manuscript"
 pandoc --verbose \
